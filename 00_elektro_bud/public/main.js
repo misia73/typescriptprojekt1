@@ -46,11 +46,11 @@ function edytujProdukt(p) {
 function zmienStan(p, rodzaj) {
     const ilosc = Number(prompt("Ilosc (" + rodzaj + "):"));
     if (!Number.isInteger(ilosc) || ilosc <= 0) {
-        alert("Zla ilosc!");
+        alert("zla ilosc");
         return;
     }
     if (rodzaj === "wydanie" && ilosc > p.ilosc) {
-        alert("Na stanie jest tylko " + p.ilosc + " szt.!");
+        alert("na stanie jest tylko " + p.ilosc);
         return;
     }
     p.ilosc += rodzaj === "przyjecie" ? ilosc : -ilosc;

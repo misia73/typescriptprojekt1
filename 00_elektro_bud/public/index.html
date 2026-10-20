@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>elektro-bud</title>
+</head>
+<body>
+  <h1>elektro-bud</h1>
+
+  <h2>dodaj produkt</h2>
+  <input type="text" id="ean" placeholder="kod EAN">
+  <input type="text" id="nazwa" placeholder="nazwa">
+  <input type="text" id="kategoria" placeholder="kategoria">
+  <input type="text" id="sektor" placeholder="sektor">
+  <input type="text" id="regal" placeholder="regal">
+  <input type="text" id="polka" placeholder="polka">
+  <button id="dodaj">dodaj</button>
+
+  <h2>produkty</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>EAN</th><th>nazwa</th><th>kategoria</th>
+        <th>lokalizacja </th><th>ilosc</th><th>akcje</th>
+      </tr>
+    </thead>
+    <tbody id="tabela"></tbody>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html>
